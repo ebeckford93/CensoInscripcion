@@ -1,6 +1,16 @@
-<nav>
-  <img [src]="image" alt="" />
-  <span>{{ title }}</span>
-  <span>{{ username }}</span>
-  <span>userIconDropdown</span>
-</nav>
+<mat-toolbar color="primary">
+  <nav>
+    <img [src]="image" alt="" />
+    <span class="title">{{ title }}</span>
+    <button mat-stroked-button [matMenuTriggerFor]="menu" class="user">
+      <mat-icon>account_circle</mat-icon>
+      <span class="user-name">{{ username }}</span>
+    </button>
+  </nav>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <span>Cerrar Sesión</span>
+    <mat-icon>dialpad</mat-icon>
+  </button>
+</mat-menu>

@@ -1,10 +1,36 @@
 img {
-  height: 80px;
-  width: 80;
-  margin: 10px;
+  height: 100%;
+  margin-left: 25px;
 }
 span {
   margin: 5px;
   margin-left: 10px;
   margin-right: 10px;
+  font-size: small;
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+mat-toolbar {
+  padding: 5px;
+  height: 50px;
+}
+mat-icon {
+  color: #80ff99;
+  padding-top: 8px;
+  align-self: center;
+  font-size: large;
+}
+.title {
+  font-size: medium;
+}
+.user {
+  background-color: rgba($color: #ffffff, $alpha: 0.1);
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
 }
